@@ -106,7 +106,7 @@ generate_client_ca() {
       -days 36500 \
       -sha256 \
       -nodes \
-      -subj "/CN=credhub_client_ca" \
+      -subj "/C=CH/ST=Bern/L=Bern/O=ampersand8/CN=credhub_client_ca" \
       -keyout client_ca_private.pem \
       -out client_ca_cert.pem
 }
